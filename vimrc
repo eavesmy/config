@@ -43,6 +43,9 @@ set smartcase
 "语法检查
 syntax on
 
+"High light search result
+set hlsearch
+
 "使用配色
 color dracula
 
