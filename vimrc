@@ -49,6 +49,10 @@ set hlsearch
 "使用配色
 color dracula
 
+"自定义键
+map <c-h> ^
+map <c-l> $
+
 "PLUGIN
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
