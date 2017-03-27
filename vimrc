@@ -49,9 +49,15 @@ set hlsearch
 "使用配色
 color dracula
 
-"自定义键
-map <c-h> ^
-map <c-l> $
+"insert model
+inoremap <c-h> <esc> ^i
+inoremap <c-l> <esc> $i
+inoremap <c-d> <esc> ddi
+inoremap <c-c> <esc> yyi
+inoremap <c-v> <esc> p dd k pi
+
+"normal model
+nnoremap <tab> viw
 
 "PLUGIN
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -61,6 +67,7 @@ Plugin 'fatih/vim-go'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'dart-lang/dart-vim-plugin'
+Plugin 'YouCompleteMe'
 
 call vundle#end()
 
@@ -79,3 +86,6 @@ let g:go_fmt_autosave = 1
 "SETTING vim-autoformat
 noremap <F3> :Autoformat<CR>
 
+"SETTING YouCompleteMe
+let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_min_num_identifier_candidate_chars = 0
