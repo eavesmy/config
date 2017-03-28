@@ -55,9 +55,20 @@ inoremap <c-l> <esc> $i
 inoremap <c-d> <esc> ddi
 inoremap <c-c> <esc> yyi
 inoremap <c-v> <esc> p dd k pi
+inoremap <c-f> <esc> /
 
 "normal model
 nnoremap <tab> viw
+nnoremap ss :!svn ci
+
+"statusline
+set laststatus=2
+set statusline=
+set statusline +=%3*%y%*                
+set statusline +=%4*\ %<%F%*            
+set statusline +=%2*%m%*              
+set statusline +=%1*%=%5l%*             
+set statusline +=%2*/%L%*               
 
 "PLUGIN
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -94,3 +105,7 @@ let g:ycm_server_python_interpreter = '/usr/bin/python2.7'
 
 "SETTING ack
 map <F4> :Ack -i 
+
+
+"Dartlang setting
+au BufNewFile,BufRead *.dart set filetype=dartlang
