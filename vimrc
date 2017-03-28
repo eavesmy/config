@@ -67,7 +67,8 @@ Plugin 'fatih/vim-go'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'dart-lang/dart-vim-plugin'
-Plugin 'YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'mileszs/ack.vim'
 
 call vundle#end()
 
@@ -89,3 +90,7 @@ noremap <F3> :Autoformat<CR>
 "SETTING YouCompleteMe
 let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_min_num_identifier_candidate_chars = 0
+let g:ycm_server_python_interpreter = '/usr/bin/python2.7'
+
+"SETTING ack
+map <F4> :Ack -i 
