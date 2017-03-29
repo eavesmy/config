@@ -47,7 +47,9 @@ syntax on
 set hlsearch
 
 "使用配色
-color dracula
+"color dracula
+
+"all model
 
 "insert model
 inoremap <c-h> <esc> ^i
@@ -60,15 +62,25 @@ inoremap <c-f> <esc> /
 "normal model
 nnoremap <tab> viw
 nnoremap ss :!svn ci
+nnoremap "" ^i // <esc>
 
 "statusline
 set laststatus=2
 set statusline=
-set statusline +=%3*%y%*                
-set statusline +=%4*\ %<%F%*            
-set statusline +=%2*%m%*              
-set statusline +=%1*%=%5l%*             
+set statusline +=%3*%y%*
+set statusline +=%4*\ %<%F%*
+set statusline +=%1*%m%*
+set statusline +=%2*%=%5l%* 
 set statusline +=%2*/%L%*               
+
+hi User1 ctermbg=000 ctermbg=002
+hi User2 ctermbg=006 ctermbg=008
+hi User3 ctermfg=000 ctermbg=004
+hi User4 ctermfg=000 ctermbg=003
+hi User5 ctermfg=008
+hi User7 ctermfg=008
+hi User8 ctermfg=008
+hi User9 ctermfg=007
 
 "PLUGIN
 set rtp+=~/.vim/bundle/Vundle.vim
