@@ -47,17 +47,17 @@ syntax on
 set hlsearch
 
 "使用配色
-"color dracula
+color dracula
 
 "all model
+noremap <c-l> <esc> $i
+noremap <c-h> <esc> ^i
+noremap <c-f> <esc> /
 
 "insert model
-inoremap <c-h> <esc> ^i
-inoremap <c-l> <esc> $i
 inoremap <c-d> <esc> ddi
 inoremap <c-c> <esc> yyi
 inoremap <c-v> <esc> p dd k pi
-inoremap <c-f> <esc> /
 
 "normal model
 nnoremap <tab> viw
