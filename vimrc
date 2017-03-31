@@ -86,6 +86,7 @@ hi User9 ctermfg=007
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'dracula/vim'
 Plugin 'fatih/vim-go'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'Chiel92/vim-autoformat'
