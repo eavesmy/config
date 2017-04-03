@@ -1,4 +1,4 @@
-"显示行号
+"显示号
 set nu
 
 "允许折叠
@@ -55,9 +55,8 @@ noremap <c-h> <esc> ^i
 noremap <c-f> <esc> /
 
 "insert model
-inoremap <c-d> <esc> ddi
-inoremap <c-c> <esc> yyi
-inoremap <c-v> <esc> p dd k pi
+inoremap <c-j> <esc> ^i
+inoremap <c-l> <esc> $i
 
 "normal model
 nnoremap <tab> viw
