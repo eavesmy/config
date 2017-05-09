@@ -62,7 +62,6 @@ inoremap <c-l> <esc> $i
 nnoremap <tab> viw
 nnoremap ss :!svn ci
 nnoremap "" ^i // <esc>
-
 "statusline
 set laststatus=2
 set statusline=
@@ -91,6 +90,7 @@ Plugin 'Chiel92/vim-autoformat'
 Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'mileszs/ack.vim'
+Plugin 'maksimr/vim-jsbeautify'
 
 call vundle#end()
 
@@ -107,7 +107,7 @@ let g:go_fmt_autosave = 1
 "let g:go_bin_path = '/home/eaves/go/bin'"
 
 "SETTING vim-autoformat
-noremap <F3> :Autoformat<CR>
+"noremap <F3> :Autoformat<CR>
 
 "SETTING YouCompleteMe
 let g:ycm_min_num_of_chars_for_completion = 1
@@ -116,7 +116,7 @@ let g:ycm_server_python_interpreter = '/usr/bin/python2.7'
 
 "SETTING ack
 map <F4> :Ack -i 
-
+map <F3> :call JsBeautify()<cr>
 
 "Dartlang setting
 au BufNewFile,BufRead *.dart set filetype=dartlang
