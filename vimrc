@@ -71,6 +71,8 @@ set statusline +=%1*%m%*
 set statusline +=%2*%=%5l%* 
 set statusline +=%2*/%L%*               
 hi User1 ctermfg=007 ctermbg=002
+hi User2 ctermfg=007 ctermbg=008
+hi User3 ctermfg=007 ctermbg=004
 hi User4 ctermfg=007 ctermbg=003
 hi User5 ctermfg=007
 hi User7 ctermfg=007
@@ -81,7 +83,6 @@ hi User9 ctermfg=007
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'dracula/vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'fatih/vim-go'
 Plugin 'ekalinin/Dockerfile.vim'
@@ -94,6 +95,7 @@ Plugin 'maksimr/vim-jsbeautify'
 call vundle#end()
 
 set runtimepath^=~/.vim/bundle/ctrlp
+set runtimepath+=~/.vim/bundle/jshint2.vim/
 
 "SETTING vim-go:
 let g:go_highlight_functions = 1
@@ -119,3 +121,6 @@ map <F3> :call JsBeautify()<cr>
 
 "Dartlang setting
 au BufNewFile,BufRead *.dart set filetype=dartlang
+
+"SETTING JShint
+let jshint2_save = 1
