@@ -1,3 +1,5 @@
+set encoding=utf-8
+
 "显示号
 set nu
 
