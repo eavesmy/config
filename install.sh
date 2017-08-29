@@ -26,8 +26,11 @@ funcInstall zip
 funcInstall couchdb
 funcInstall byobu
 funcInstall python2.7
+funcInstall vim
 
-deluser -r tt
+git clone https://github.com/dracula/vim.git ~/.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 #adduser tt
 #passwd tt << EOF
 #	$PASSWD
