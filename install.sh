@@ -9,7 +9,7 @@ PASSWD="23216340eavesDL"
 
 funcInstall(){
 
-echo "\033[32m ${SPLIT}"Install"$1 \033[0m"
+echo "\033[32m ${SPLIT}"Install_  "$1 \033[0m"
 apt install $1 << EOF
 
 EOF
@@ -29,8 +29,9 @@ funcInstall python2.7
 funcInstall vim
 funcInstall cmake
 
-adduser gary
-su gary
+adduser eaves
+su eaves
+cd ~/
 
 git clone https://github.com/dracula/vim.git ~/.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

@@ -75,7 +75,7 @@ set statusline +=%2*/%L%*
 hi User1 ctermfg=007 ctermbg=002
 hi User2 ctermfg=007 ctermbg=008
 hi User3 ctermfg=007 ctermbg=004
-hi User4 ctermfg=007 ctermbg=003
+hi User4 ctermfg=007 ctermbg=016
 hi User5 ctermfg=007
 hi User7 ctermfg=007
 hi User8 ctermfg=007
