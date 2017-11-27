@@ -96,7 +96,7 @@ Plugin 'maksimr/vim-jsbeautify'
 
 call vundle#end()
 
-set runtimepath^=~/.vim/bundle/ctrlp
+set runtimepath^=~/.vim/bundle/ctrlp.vim/
 set runtimepath+=~/.vim/bundle/jshint2.vim/
 
 "SETTING vim-go:
