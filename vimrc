@@ -7,7 +7,7 @@ set nu
 set foldenable
 
 "显示status bar
-set laststatus=1
+"set laststatus=1
 
 "打开文件目录
 "map<C-F3> \be
@@ -65,8 +65,7 @@ nnoremap <tab> viw
 nnoremap ss :!svn ci
 nnoremap "" ^i // <esc>
 "statusline
-set laststatus=2
-set statusline=
+"set laststatus=2
 set statusline +=%3*%y%*
 set statusline +=%4*\ %<%F%*
 set statusline +=%1*%m%*
@@ -85,6 +84,7 @@ hi User9 ctermfg=007
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'leafgarland/typescript-vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'fatih/vim-go'
 Plugin 'ekalinin/Dockerfile.vim'
@@ -93,7 +93,6 @@ Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'mileszs/ack.vim'
 Plugin 'maksimr/vim-jsbeautify'
-
 call vundle#end()
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim/
@@ -123,6 +122,7 @@ map <F3> :call JsBeautify()<cr>
 
 "Dartlang setting
 au BufNewFile,BufRead *.dart set filetype=dartlang
+au BufNewFile,BufRead *.ts set filetype=typescript
 
 "SETTING JShint
 let jshint2_save = 1
