@@ -29,10 +29,10 @@ funcInstall python2.7
 funcInstall vim
 funcInstall cmake
 
-adduser eaves
-su eaves
+# adduser eaves
+# su eaves
 cd ~/
-
+exit
 git clone https://github.com/dracula/vim.git ~/.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
