@@ -1,4 +1,0 @@
-#!/bin/bash
-
-mongod --dbpath=/usr/lib/mongo/db/ --logpath=/usr/lib/mongo/log/mongo.log -logappend -port 8001 --fork
-nginx -c /usr/lib/nginx/nginx.conf
