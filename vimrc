@@ -7,7 +7,7 @@ set nu
 set foldenable
 
 "显示status bar
-"set laststatus=1
+set laststatus=1
 
 "打开文件目录
 "map<C-F3> \be
@@ -25,7 +25,7 @@ set syntax=on
 set noeb
 
 "TAB宽度
-set tabstop=4
+set tabstop=2
 
 "自动对齐
 set autoindent
@@ -52,7 +52,7 @@ set hlsearch
 color dracula
 
 "all model
-noremap <c-l> <esc> $i
+noremap <c-l> <esc> $a
 noremap <c-h> <esc> ^i
 noremap <c-f> <esc> /
 
@@ -64,6 +64,7 @@ inoremap <c-l> <esc> $i
 nnoremap <tab> viw
 nnoremap ss :!svn ci
 nnoremap "" ^i // <esc>
+
 "statusline
 "set laststatus=2
 set statusline +=%3*%y%*
@@ -93,6 +94,8 @@ Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'mileszs/ack.vim'
 Plugin 'maksimr/vim-jsbeautify'
+Plugin 'suan/vim-instant-markdown'
+
 call vundle#end()
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim/
@@ -115,6 +118,9 @@ let g:go_fmt_autosave = 1
 let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_min_num_identifier_candidate_chars = 0
 let g:ycm_server_python_interpreter = '/usr/bin/python2.7'
+
+" 即时显示 markdown
+let g:instant_markdown_slow = 1
 
 "SETTING ack
 map <F4> :Ack -i 
