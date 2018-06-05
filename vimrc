@@ -25,7 +25,7 @@ set syntax=on
 set noeb
 
 "TAB宽度
-set tabstop=2
+set tabstop=4
 
 "自动对齐
 set autoindent
@@ -63,7 +63,9 @@ inoremap <c-l> <esc> $i
 "normal model
 nnoremap <tab> viw
 nnoremap ss :!svn ci
+nnoremap cc :!git commit
 nnoremap "" ^i // <esc>
+nnoremap jshint :JSHint --config ~/Documents/config/jshintrc <enter>
 
 "statusline
 "set laststatus=2

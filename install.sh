@@ -29,14 +29,6 @@ funcInstall python2.7
 funcInstall vim
 funcInstall cmake
 
-# adduser eaves
-# su eaves
-cd ~/
-
-git clone https://github.com/dracula/vim.git ~/.vim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
-
 #passwd tt << EOF
 #	$PASSWD
 #	$PASSWD
